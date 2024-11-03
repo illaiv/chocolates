@@ -1,0 +1,175 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        border: 5px solid rgb(0, 0, 0);
+      }
+
+      .box {
+        flex: 0 0 400px;
+        height: 150px;
+        background-color: #e5e2b3;
+        margin: 5px;
+        font-size: xx-large;
+        color: rgb(0, 0, 0);
+        box-sizing: border-box;
+        padding: 2px;
+        margin: 2px;
+        font-size: medium;
+        text-align: center;
+        position: relative;
+      }
+      button {
+        background-color: #532a29;
+        color: rgb(230, 228, 227);
+        font-size: larger;
+      }
+      h1 {
+        width: 100%;
+        background-color: rgb(73, 40, 40);
+        color: #ffffff;
+        text-align: center;
+        font-size: xx-large;
+      }
+.box img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #e5e2b3;
+}
+    </style>
+    <script src="jquery-3.7.1.js"></script>    
+    <script src="chocolate.js"></script>
+  </head>
+  <body>
+    <h1>Chocolate Factory</h1>
+    <p>Select Desired Chocolate</p>
+    <p>
+      <button type="button" onclick="toggleCalories()">Hide/Show Content&Calories</button>
+      <button type="button" onclick="highlightRandomChocolate()">
+        Highlight Random Chocolate
+      </button>
+      <button type="button" onclick="sampleRaffle()">
+        Raffle 1-50 for a chance for a sample.</button>
+
+    </p>
+    <div class="wrapper">
+      <div class="box">
+        1
+        <p class="chocolate">
+            Plain Milk       
+        </p>
+        <img src="assets/plain_milk.jpg" alt="Plain Milk Chocolate">
+        <p class="contents">
+            110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar
+
+        </p>
+      </div>
+      <div class="box">
+        2
+        <p class="chocolate">
+            Plain Dark    
+         </p>
+         <img src="assets/plain_dark.jpg" alt="Plain Dark Chocolate">
+         <p class="contents">
+            110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar
+            
+         </p>
+      </div>
+      <div class="box">
+        3
+        <p class="chocolate">
+            Plain Hybrid     
+         </p>
+         <img src="assets/plain_hybrid.jpg" alt="Plain Hybrid Chocolate">
+         <p class="contents">
+            110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar
+         </p>
+      </div>
+      <div class="box">
+        4
+        <p class="chocolate">
+            Nutter Butter Cup      
+         </p>
+         <img src="assets/nutter_butter.jpg" alt="Nutter Butter Cup">
+         <p class="contents">
+            110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar
+         </p>
+      </div>
+      <div class="box">
+        5
+        <p class="chocolate">
+            Bailey's Cup     
+         </p>
+         <img src="assets/baileys_cup.jpg" alt="Bailey's Cup Chocolate">
+         <p class="contents">
+            110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar
+         </p>
+      </div>
+      <div class="box">
+        6
+        <p class="chocolate">
+            Rum Barrel   
+         </p>
+         <img src="assets/rum_barrel.jpg" alt="Rum Barrel Chocolate">
+         <p class="contents">
+            110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar
+         </p>
+      </div>
+      <div class="box">
+        7
+        <p class="chocolate">
+            Orange Fondant     
+         </p>
+         <img src="assets/orange_fondant.jpg" alt="Orange Fondant Chocolate">
+         <p class="contents">
+            110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar
+         </p>
+      </div>
+      <div class="box">
+        8
+        <p class="chocolate">
+            Cappuccino Cup  
+         </p>
+         <img src="assets/cappuccino_cup.jpg" alt="Cappucino Cup Chocolate"> <p class="contents">
+            110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar
+         </p>
+         
+      </div>
+      <div class="box">
+        9
+        <p class="chocolate">
+            Pistachio diamond   
+         </p>
+         <img src="assets/pistachio_diamond.jpg" alt="Pistachio Diamond Chocolate">
+         <p class="contents">
+            110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar
+         </p>
+      </div>
+      <div class="box">
+        10
+        <p class="chocolate">
+            toffee Crunch    
+         </p>
+         <img src="assets/toffee_crunch.jpg" alt="Toffee Crunch Chocolate">
+         <p class="contents">
+            110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar
+         </p>
+      </div>
+    </div>
+  </body>
+</html>
